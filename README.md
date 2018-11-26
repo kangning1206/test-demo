@@ -1,4 +1,6 @@
 ## 测试
+-------
+
 
 # 运行
 
@@ -44,6 +46,8 @@ expect(add(2, 2)).to.be.equal(4);
 
 `to.be` 可以理解为等号 `==`，所以是比较左边程序结果与右边预期结果是否一致；
 
+* mocha 测试框架是做为单元测试，为开发人员测试接口、方法的利器，仅表明了需要测试用例是否正确；
+反过来说没有编写测试的，则将被遗弃，是否正确是没有验证的，所以还需要`测试覆盖率`的引入，说明有多少代码、属性、方法已经被验证过了，这个才是重点，下一步增加`覆盖率`的报告；
 
 # react 测试
 
@@ -66,5 +70,31 @@ react 支持当前市场由于facebook自己提供，但使用成本和易用性
 可以处理虚拟DOM和真实DOM;
 
 
+## 目录
 
+```
+tree -I "node_modules|dist|tests|mocha-report|cache|test_*" --dirsfirst
+```
+
+
+```
+.
+├── mocha
+│   ├── src
+│   │   ├── add.js
+│   │   └── multiply.js
+│   └── test
+│       ├── module1
+│       │   └── multiply.test.js
+│       └── add.test.js
+├── react-enzyme
+│   ├── src
+│   │   ├── helloword.js
+│   │   └── index.js
+│   └── test
+│       └── helloword.test.js
+├── README.md
+├── package-lock.json
+└── package.json
+```
 

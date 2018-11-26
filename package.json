@@ -1,10 +1,17 @@
 {
   "name": "test-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "前端测试框架mocha demo, enzyme",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kangning1206/test-demo.git"
+  },
+   "bugs": {
+    "url": "https://github.com/kangning1206/test-demo/issues"
+  },
   "scripts": {
-    "test.mocha": "mocha --recursive --reporter mochawesome --reporter-options reportDir=./react-enzyme/mocha-report mocha/test/",
+    "test.mocha": "mocha --recursive --reporter mochawesome --reporter-options reportDir=./mocha/mocha-report mocha/test/",
     "test.react": "mocha --inspect --require @babel/register --recursive  --reporter mochawesome --reporter-options reportDir=./react-enzyme/mocha-report react-enzyme/test/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

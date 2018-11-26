@@ -1,0 +1,197 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2018-11-26T11:56:48.366Z",
+    "end": "2018-11-26T11:56:48.379Z",
+    "duration": 13,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "35957d9a-fe5a-4c75-b7c4-1eabf4818318",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "ce3a823a-7f9e-4e0f-832f-bc847106c84c",
+        "title": "加法函数的测试",
+        "fullFile": "/Users/knb/workspace/project/demoproject/test-demo/mocha/test/add.test.js",
+        "file": "/mocha/test/add.test.js",
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook",
+            "fullTitle": "加法函数的测试 \"before all\" hook",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "// 在本区块的所有测试用例之前执行\nconsole.log('before');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "e6a3e112-3581-4452-8d6b-8c987dccdd53",
+            "isHook": true,
+            "skipped": false
+          },
+          {
+            "title": "\"before each\" hook",
+            "fullTitle": "加法函数的测试 \"before each\" hook",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "// 在本区块的每个测试用例之前执行\nconsole.log('beforeEach');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "d54c896c-332f-4a7d-864f-05f225b77b50",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [
+          {
+            "title": "\"after all\" hook",
+            "fullTitle": "加法函数的测试 \"after all\" hook",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "// 在本区块的所有测试用例之后执行\nconsole.log('after');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "c9398f32-0db9-4c5e-98d7-3cb39c0c8f86",
+            "isHook": true,
+            "skipped": false
+          },
+          {
+            "title": "\"after each\" hook",
+            "fullTitle": "加法函数的测试 \"after each\" hook",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "// 在本区块的每个测试用例之后执行\nconsole.log('afterEach');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "bfd83d80-7648-4ecb-94d3-600497620cc4",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "tests": [
+          {
+            "title": "1 加 1 应该等于 2",
+            "fullTitle": "加法函数的测试 1 加 1 应该等于 2",
+            "timedOut": false,
+            "duration": 1,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "expect(add(1, 1)).to.be.equal(2);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "0bb52bbe-c1c0-4af6-b57e-11b8cf24a655",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "1 加 1 应该等于 2",
+            "fullTitle": "加法函数的测试 1 加 1 应该等于 2",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "expect(add(2, 2)).to.be.equal(4);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "3223abfe-7972-493a-a9c2-40924584a782",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "0bb52bbe-c1c0-4af6-b57e-11b8cf24a655",
+          "3223abfe-7972-493a-a9c2-40924584a782"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "6d0e0a5b-7f7a-400b-bfbd-530bef325e04",
+        "title": "乘法函数的测试",
+        "fullFile": "/Users/knb/workspace/project/demoproject/test-demo/mocha/test/module1/multiply.test.js",
+        "file": "/mocha/test/module1/multiply.test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "3 加 9 应该等于 27",
+            "fullTitle": "乘法函数的测试 3 加 9 应该等于 27",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "expect(multiply(3, 9)).to.be.equal(27);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "856944b3-5124-411e-8dfb-49a144d01130",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "856944b3-5124-411e-8dfb-49a144d01130"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2018
+}
