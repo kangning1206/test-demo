@@ -1,0 +1,31 @@
+{
+  "name": "test-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test.mocha": "mocha --recursive --reporter mochawesome --reporter-options reportDir=./react-enzyme/mocha-report mocha/test/",
+    "test.react": "mocha --inspect --require @babel/register --recursive  --reporter mochawesome --reporter-options reportDir=./react-enzyme/mocha-report react-enzyme/test/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "chai": "^4.2.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
+    "mocha": "^5.2.0",
+    "mochawesome": "^3.1.1",
+    "react-addons-test-utils": "^15.6.2",
+    "sinon": "^7.1.1"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  }
+}
